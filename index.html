@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Maja Flowers</title>
+  <meta name="description" content="Un mazzo raccolto fiore per fiore in giro per Sassuolo.">
+  <meta name="theme-color" content="#fbf4ec">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="hero">
+      <p class="kicker">Maja Flowers</p>
+      <h1>Un mazzo<br><em>per te</em></h1>
+      <p class="lead">
+        Un giro per Sassuolo, un fiore per ogni tappa,
+        <span class="nowrap">zero euro spesi.</span>
+      </p>
+    </header>
+
+    <section class="stage" aria-label="Il video">
+      <div class="frame" id="frame">
+        <video
+          id="vlog"
+          src="media/vlog.mp4"
+          poster="media/poster.jpg"
+          preload="metadata"
+          playsinline
+          controlslist="nodownload"
+        ></video>
+
+        <button class="play" id="play" type="button" aria-label="Guarda il video">
+          <span class="play-icon" aria-hidden="true"></span>
+          <span class="play-label">Guarda il video</span>
+        </button>
+
+        <div class="outro" id="outro" hidden>
+          <p class="outro-text">Ti amo.<br><em>Tanto.</em></p>
+          <button class="again" id="again" type="button">Riguardalo</button>
+        </div>
+      </div>
+      <p class="meta"><span id="duration">6 minuti e mezzo</span> · alza il volume</p>
+    </section>
+
+    <footer class="foot">
+      <p>Raccolto, girato e montato per te. 🌷</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
